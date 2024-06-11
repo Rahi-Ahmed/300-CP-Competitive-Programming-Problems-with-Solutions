@@ -1,0 +1,62 @@
+H. Lab 4 Assessment
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Write a function matrix_mirrored that accepts an 𝑛×5
+ matrix and returns true when all rows of the matrix are the same when written in reverse (and returns false otherwise). Your function must have the following contract:
+
+#include <stdio.h>
+#include <stdbool.h>
+
+// matrix_mirrored(n, A) returns true exactly when all rows of the n x 5 matrix A are
+//   "mirrored", i.e., the exact same when written backwards
+// requires: 1 <= n <= 10
+bool matrix_mirrored(const int n, const int A[][5]);
+The first line of input given to your program will be an integer 𝑛
+ representing the number of rows of the input matrix 𝐴
+, followed by each entry of the input matrix given row by row.
+
+In main, read 𝑛
+ and the entries of the matrix 𝐴
+ using calls to scanf, then call your function matrix_mirrored on 𝑛
+ and 𝐴
+. The output of your program should be the single line containing Y if the matrix is "mirrored" or N if the matrix is not "mirrored" (note the line ends with a newline character).
+
+Note. You can assume the input follows the given specification.
+
+If your compiler does not support variable-length arrays you can define 𝐴
+ as a 10×5
+ array because the maximum number of rows of 𝐴
+ will be 10.
+
+Examples
+inputCopy
+3
+1 2 3 4 5
+6 7 8 9 10
+11 12 13 14 15
+outputCopy
+N
+inputCopy
+3
+1 2 3 2 1
+6 7 8 7 6
+11 12 13 12 11
+outputCopy
+Y
+inputCopy
+2
+1 2 3 2 1
+6 7 8 6 7
+outputCopy
+N
+inputCopy
+5
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+outputCopy
+Y
