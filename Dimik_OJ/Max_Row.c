@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Finding Maximum 1's in a row
+// Running in O(n) time for finding the row that contains the most 1's
 
 int main(){
     int a[3][3] = {{1, 0, 1}, {1, 1, 1}, {0, 0, 0}};
