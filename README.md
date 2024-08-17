@@ -1,2 +1,2 @@
-# 300-CP-Competitive-Programming-Problems-with-Solutions
-I solved 300 CP problems using c, c++ and java (Mostly c++) including different online Judges
+# Competitive-Programming
+I have been solving CP problems since 2022 using c, c++ and java (Mostly c++) including different online Judges. Here I upload all the codes.
