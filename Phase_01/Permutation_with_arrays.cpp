@@ -15,23 +15,17 @@ int main()
         cin >> b[i];
     }
 
-    int flag = 0;
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
-            if(b[i] == a[j]){
-                flag = 1;
-                break;
-            }else{
-                flag = 0;
-            }
-        }
-    if(flag == 0){
-        cout << "no";
-        break;
-    }
-  }
+    sort(a + 0, a + n + 0);
+    sort(b + 0, b + n + 0);
 
-  if(flag == 1){
-    cout << "yes";
-  }
+    for(int i = 0; i < n; i++){
+        if(a[i] != b[i]){
+           cout << "no" << endl;
+           return 0;
+        }
+    }
+
+    cout << "yes" << endl;
+
+    return 0;
 }
